@@ -1,0 +1,347 @@
+🧪 Assignment 0.1: Raw Prompt Experiment
+
+Concept
+
+Tokens
+
+Context window
+
+Determinism vs randomness
+
+Task
+
+Call LLM without LangChain
+
+Change:
+
+temperature
+
+max tokens
+
+Observe output differences
+
+Deliverable
+
+Short report: “How parameters affect model behavior”
+
+🧪 Assignment 0.2: Token Budget Analyzer
+
+Concept
+
+Token economics
+
+Task
+
+Write a script that:
+
+Counts tokens of prompt
+
+Fails if over limit
+
+Use Case
+
+Prevent API crashes
+
+🟢 PHASE 1: LangChain Core Abstractions (Beginner)
+
+Understand what LangChain abstracts and why.
+
+🧪 Assignment 1.1: LLM Wrapper
+
+Concept
+
+Model abstraction
+
+Task
+
+Swap between:
+
+OpenAI
+
+Gemini
+
+Local LLM
+
+No code change in business logic
+
+Design Insight
+
+Vendor-agnostic design
+
+🧪 Assignment 1.2: Prompt as Code
+
+Concept
+
+PromptTemplate
+
+Task
+
+Create versioned prompts
+
+Load prompt from file
+
+Use Case
+
+A/B testing prompts
+
+🧪 Assignment 1.3: Chain Composition
+
+Concept
+
+Deterministic pipelines
+
+Task
+
+Chain:
+
+Prompt → LLM → Parser
+
+🟡 PHASE 2: Runtime Context (Core Engineering)
+
+Everything model sees at execution time
+
+🧪 Assignment 2.1: Context Visualizer
+
+Concept
+
+Runtime context
+
+Task
+
+Print:
+
+System prompt
+
+User message
+
+Memory
+
+Retrieved docs
+
+Use Case
+
+Debug hallucinations
+
+🧪 Assignment 2.2: Context Budget Controller
+
+Concept
+
+Context prioritization
+
+Task
+
+Enforce:
+
+User query always included
+
+Memory trimmed
+
+Docs trimmed last
+
+🟡 PHASE 3: Context Engineering
+
+What goes into context & why
+
+🧪 Assignment 3.1: Context Ordering Study
+
+Task
+
+Change order of:
+
+Instructions
+
+Docs
+
+Question
+
+Compare accuracy
+
+🧪 Assignment 3.2: Context Compression
+
+Task
+
+Summarize docs before injection
+
+Use Case
+
+3000-page insurance PDFs
+
+🟠 PHASE 4: Memory Systems
+
+Memory is not chat history
+
+🧪 Assignment 4.1: Tiered Memory
+
+Task
+
+Short-term: recent turns
+
+Long-term: vector store
+
+🧪 Assignment 4.2: Memory Decision Agent
+
+Task
+
+LLM decides:
+
+Save memory?
+
+Ignore?
+
+🔵 PHASE 5: Document Intelligence & RAG
+
+Retrieval > generation
+
+🧪 Assignment 5.1: Chunking Strategy Lab
+
+Task
+
+Compare chunk sizes
+
+Measure retrieval accuracy
+
+🧪 Assignment 5.2: Hybrid Retrieval
+
+Task
+
+Combine BM25 + Vector
+
+🧪 Assignment 5.3: Metadata Filtering
+
+Task
+
+Filter docs by:
+
+Role
+
+Date
+
+Department
+
+🟣 PHASE 6: Tools & Function Calling
+
+LLM as brain, tools as execution
+
+🧪 Assignment 6.1: Tool Definition
+
+Task
+
+Create:
+
+Calculator
+
+DB query
+
+API mock tool
+
+🧪 Assignment 6.2: Tool Routing
+
+Task
+
+LLM chooses correct tool
+
+🧪 Assignment 6.3: Tool Failure Recovery
+
+Task
+
+Retry or fallback response
+
+🔴 PHASE 7: Agents & Orchestration
+
+Multi-step autonomy
+
+🧪 Assignment 7.1: Planner-Executor Agent
+
+Task
+
+Planner outputs steps
+
+Executor runs tools
+
+🧪 Assignment 7.2: Human-in-Loop Agent
+
+Task
+
+Approval before action
+
+🟤 PHASE 8: Runtime Routing & Control Flow
+
+Dynamic pipelines
+
+🧪 Assignment 8.1: Query Router
+
+Task
+
+Route:
+
+RAG
+
+Tool
+
+Chat
+
+🧪 Assignment 8.2: Adaptive Retrieval
+
+Task
+
+Change retrieval depth by question type
+
+⚫ PHASE 9: Production System Design
+
+Interview + real-world
+
+🧪 Assignment 9.1: FastAPI Integration
+
+Task
+
+Stateless API
+
+JSON input/output
+
+🧪 Assignment 9.2: Caching & Cost Control
+
+Task
+
+Cache embeddings
+
+Cache LLM responses
+
+🧪 Assignment 9.3: Security & On-Prem Mode
+
+Task
+
+No cloud calls
+
+Local vector DB
+
+Access control
+
+🏗️ CAPSTONE PROJECT
+🧠 Enterprise AI Assistant
+
+Scenario
+
+Insurance company intelligent document system
+
+Must Include
+
+Runtime context tracking
+
+Context compression
+
+Tiered memory
+
+Hybrid RAG
+
+Tool routing
+
+Approval gates
+
+API interface
+
+🎯 After This Track You Can:
+
+✅ Design LLM systems
+✅ Explain runtime context clearly
+✅ Defend architecture in interviews
+✅ Build enterprise-grade RAG apps

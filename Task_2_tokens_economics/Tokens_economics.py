@@ -18,3 +18,12 @@ model=ChatGoogleGenerativeAI(
 )
 message="how human understands emotions"
 print(model.get_num_tokens(message))
+
+
+"""
+1. limit the tokesn as hard way 
+2. auto trim the message of older messages 
+3. summarize through another model call 
+4. output tokens limiting 
+
+"""
